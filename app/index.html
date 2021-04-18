@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="batmanMovie">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Movie List</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app.css" />
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-resource/angular-resource.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <script src="core/core.module.js"></script>
+  <script src="core/movie/movie.module.js"></script>
+  <script src="core/movie/movie.service.js"></script>
+  <script src="movie-list/movie-list.module.js"></script>
+  <script src="movie-list/movie-list.component.js"></script>
+</head>
+<body>
+  <movie-list></movie-list>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+</body>
+</html>
