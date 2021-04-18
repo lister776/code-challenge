@@ -1,18 +1,18 @@
-<div class="container-fluid">
+<div class="container-fluid movie-main">
     <div class="row">
         <div class="col-md-10">
             <!--Body content-->
-            <div class="btn-group btn-group-toggle fixed-top" data-toggle="buttons">
-                <label class="btn btn-primary">
+            <div class="btn-group btn-group-toggle button-group" data-toggle="buttons">
+                <label class="btn btn-primary selected-button">
                     <input type="radio" name="options" id="option1" autocomplete="off" ng-click="$ctrl.filterByYears('201')"> 2010's
                 </label>
-                <label class="btn btn-primary">
+                <label class="btn btn-primary selected-button">
                     <input type="radio" name="options" id="option2" autocomplete="off" ng-click="$ctrl.filterByYears('200')"> 2000's
                 </label>
-                <label class="btn btn-primary">
+                <label class="btn btn-primary selected-button">
                     <input type="radio" name="options" id="option3" autocomplete="off" ng-click="$ctrl.filterByYears('199')"> 1990's
                 </label>
-                <label class="btn btn-primary">
+                <label class="btn btn-primary selected-button">
                     <input type="radio" name="options" id="option4" autocomplete="off" ng-click="$ctrl.filterByYears('198')"> 1980's
                 </label>
             </div>
@@ -22,17 +22,22 @@
         <div class="col-md-10">
             <!--Body content-->
             <ul class="movies">
-                <li ng-repeat="movie in $ctrl.movies | filter: $ctrl.yearsFilter | orderBy: $ctrl.orderProp" class="thumbnail">
+                <li ng-repeat="movie in $ctrl.movies | filter: $ctrl.yearsFilter | orderBy: $ctrl.orderProp" >
                     <div class="movie-container container-fluid">
                         <div class="row">
                             <div class="col-sm-3">
                                 <img class="movie-image rounded float-left" ng-src="{{movie.Poster}}" alt="{{movie.Title}}" />
                             </div>
                             <div class="col-sm-5">
-                                <h1 class="mb-3"><small>{{movie.Title}}</small></h1>
-                                <p>{{movie.Rated}} {{movie.Runtime}} {{movie.Released}}</p>
-                                <p>{{movie.Plot}}</p>
-                                <a href="https://www.imdb.com/title/{{movie.imdbID}}">View on IMDB</a>
+                                <div class="movie-title">{{movie.Title}}</div>
+                                <div class="movie-path"></div>
+                                <div class="movie-details">
+                                    <span class="movie-rated-container"><span class="movie-rated">{{movie.Rated}}</span></span>
+                                    <span class="movie-runtime">{{movie.Runtime}}</span>
+                                    <span class="movie-released">{{movie.Released}}</span>
+                                </div>
+                                <div class="movie-plot">{{movie.Plot}}</div>
+                                <div class="movie-url"><a href="https://www.imdb.com/title/{{movie.imdbID}}"><div class="movie-url-text">View on IMDB</div></a></div>
                             </div>
                         </div>
                     </div>

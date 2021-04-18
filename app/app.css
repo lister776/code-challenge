@@ -1,2 +1,130 @@
 /* app sass stylesheet */
+.movie-main {
+    position: sticky;
+}
+.movie-container {
+    width: 696px;
+    height: 240px;
+    background: rgb(232, 235, 238);
+    border: 2px solid rgb(48, 52, 54);
+    border-radius: 8px;
+}
 
+.button-group {
+    position: relative;
+    left: 400px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.selected-button {
+    width: 92px;
+    height: 36px;
+}
+
+.movie-image {
+    width: 140px;
+    height: 208px;
+    margin: 10px 15px 10px 8px;
+    border-radius: 7px;
+}
+
+.movie-title {
+    width: 498px;
+    height: 18px;
+    color: rgb(48, 52, 54);
+    font-size: 24px;
+    font-family: ArialMT;
+    font-weight: bold;
+    line-height: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+.movie-details {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.movie-rated-container {
+    max-width: 58px;
+    min-width: 58px;
+    height: 22px;
+    border: 1px solid rgb(141, 152, 157);
+    border-radius: 4px;
+}
+
+.movie-rated {
+    max-width: 43px;
+    min-width: 43px;
+    height: 18px;
+    color: rgb(141, 152, 157);
+    font-size: 14px;
+    font-family: Courier;
+    line-height: 18px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.movie-runtime {
+    max-width: 50px;
+    min-width: 50px;
+    height: 19px;
+    color: rgb(48, 52, 54);
+    font-size: 14px;
+    font-family: ArialMT;
+    line-height: 18px;
+    position: relative;
+    left: 20px;
+}
+
+.movie-path {
+    width: 498px;
+    height: 2px;
+    border: 1px solid rgb(141, 152, 158);
+    margin-top: 10px;
+}
+.movie-released {
+    max-width: 78px;
+    min-width: 78px;
+    height: 18px;
+    color: rgb(48, 52, 54);
+    font-size: 14px;
+    font-family: Helvetica, serif;
+    text-align: right;
+    line-height: 18px;
+    position: relative;
+    left: 300px;
+}
+
+.movie-plot {
+    width: 498px;
+    height: 57px;
+    color: rgb(48, 52, 54);
+    font-size: 16px;
+    font-family: Helvetica;
+    position: relative;
+    top: 20px;
+}
+
+.movie-url {
+    width: 193px;
+    height: 40px;
+    background: rgb(249, 180, 74);
+    border-radius: 4px;
+    position: relative;
+    top: 50px;
+    left: 300px;
+}
+
+.movie-url-text {
+    width: 106px;
+    height: 19px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Helvetica-Bold;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-left: 40px;
+}
